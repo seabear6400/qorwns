@@ -1,0 +1,14 @@
+A, B = map(int, input().split())
+C = int(input())
+
+
+time = B + C
+hour = time // 60
+min = time % 60
+
+if hour > 0:
+  A += hour
+  if A >= 24:
+    A -= 24
+
+print(A, min)
